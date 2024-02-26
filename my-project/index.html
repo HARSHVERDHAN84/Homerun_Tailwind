@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homerun</title>
+  <link rel="icon" href="/assets/images/favicon_img.jpeg">
+</head>
+
+<body class="box-border m-0 p-0 bg-body-bg-color text-sm font-myFont2 text-custom-black overflow-x-hidden">
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Navigation Bar -->
+  <div class="flex justify-center h-[85px] w-full z-50 sticky items-center top-0 py-[15px] px-5 pt-[22px]">
+    <div class="w-4/5 max-w-[980px] bg-white rounded-[50px] mt-[10px] h-[82px]">
+      <a href="" class="px-5 h-[56px] float-left inline-block mt-7 mr-[13px] ml-3">
+        <img class="w-[110px] h-[24px]" src="/assets/images/navbar_logo.png" alt="nav-bar-logo">
+      </a>
+      <div class="flex text-xl leading-6 mt-6 items-center mx-auto justify-center">
+
+        <div class="flex  justify-center gap-4 mr-8 -mt-3">
+
+          <div
+            class="cursor-pointer p-[10px] hover:bg-nav-item-hover-bg-color hover:rounded-lg relative inline-block group">
+            <span class="flex gap-x-2">Product
+              <div class="border-b-[1.5px] border-r-[1.5px] h-[7px] w-[7px] border-black rotate-45 relative top-[7px]">
+              </div>
+            </span>
+            <!-- dropdown -->
+            <div
+              class="w-[400px] bg-dropdown-bg-color py-3 px-4 z-20 hidden absolute shadow-dropdown-hover-bg-shadow group-hover:block rounded-xl mb-8">
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Applicant tracking</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">One clear overview for collaborative hiring </p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Job application form</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">forms for a great candidate experience </p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Career site & Job posts</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">The best looking career site there </p>
+              </div>
+
+              <div class="mt-6 border-t">
+                <div class="text-[22px] font-bold font-myFont3 p-4 hover:bg-nav-item-hover-bg-color rounded-xl">Templates</div>
+                <div class="text-[22px] font-bold font-myFont3 p-4 hover:bg-nav-item-hover-bg-color rounded-xl">Integrations</div>
+                <div class="text-[22px] font-bold font-myFont3 p-4 hover:bg-nav-item-hover-bg-color rounded-xl">All features</div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cursor-pointer p-[10px] hover:bg-nav-item-hover-bg-color hover:rounded-lg font-light ">
+            Pricing
+          </div>
+
+          <div class="cursor-pointer p-[10px] hover:bg-nav-item-hover-bg-color hover:rounded-lg relative inline-block group">
+            <span class="flex gap-x-2">Use cases
+              <div class="border-b-[1.5px] border-r-[1.5px] h-[7px] w-[7px] border-black rotate-45 relative top-[8px] ">
+              </div>
+            </span>
+            <!-- dropdown -->
+            <div
+              class="w-[600px] bg-dropdown-bg-color py-3 px-4 z-20 absolute shadow-dropdown-hover-bg-shadow hidden grid-cols-2 grid-rows-4 gap-x-[20px] gap-y-[30px] group-hover:grid rounded-xl">
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Startups</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">B2B, B2C, tech comapnies</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Agencies</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">B2B, B2C, tech comapnies</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Hospitality</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">B2B, B2C, tech comapnies</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">E-commerce</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">B2B, B2C, tech comapnies</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Retail</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">B2B2C, tech comapnies</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Healthcare</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">B2B2C, tech comapnies</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">Education</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">B2B2C, tech comapnies</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="text-[22px] font-bold font-myFont3">All customers</h1>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="cursor-pointer p-[10px] hover:bg-nav-item-hover-bg-color hover:rounded-lg group">
+            <span class="flex gap-x-2">Resources
+              <div class="border-b-[1.5px] border-r-[1.5px] h-[7px] w-[7px] border-black rotate-45 relative top-[8px] ">
+              </div>
+            </span>
+            <!-- dropdwon -->
+            <div
+              class="w-[400px] bg-dropdown-bg-color py-3 px-4 z-20 hidden absolute shadow-dropdown-hover-bg-shadow group-hover:block rounded-xl">
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="font-bold font-myFont3">Blog</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">Packed with practical tips and advice</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="font-bold font-myFont3">Articles</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">Actionable articles on all the things hiring</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="font-bold font-myFont3">Guides</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">Inspiring and useful guides on hiring</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="font-bold font-myFont3">Showcase</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">Job posts and career pages we love</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="font-bold font-myFont3">Get Startes with Homerun</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">Simple steps to help you set up</p>
+              </div>
+
+              <div class="pt-4 pl-2 pb-2 rounded-xl hover:bg-nav-item-hover-bg-color">
+                <h1 class="font-bold font-myFont3">Help Center</h1>
+                <p class="text-[16px] font-myFont2 mt-1 font-light">Advice and answers from homerun</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flex justify-center gap-3 items-center -mt-3">
+
+          <div class="cursor-pointer p-[15px] hover:bg-login-btn-hover-bg-color rounded-[30px] font-light">
+            Log in
+          </div>
+          <div
+            class="bg-btn-bg-color text-white py-[14px] px-[25px] mt-1 rounded-[30px] cursor-pointer hover:bg-btn-bg-color-hover hover:-rotate-2 font-light text-[18px]">
+            Get started
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main-Content -->
+  <div class="max-w-[1460px] h-[6190px] rounded-[40px] -mt-[35px] bg-main-content-bg-color">
+    <!-- hiring section  -->
+    <div>
+      <div class="flex flex-col justify-center items-center pt-[150px]">
+        <h1 class="text-[110px] leading-[0.93] text-center font-myFont3 font-black text-custom-brown">
+          The people-first <br> hiring tool for <br>SMBs
+        </h1>
+
+        <p class="text-center text-[26px] mt-5 leading-[1.4] text-custom-brown">
+          No more ping-ponging between emails, CVs and spreadsheets.
+          <br>
+          Organize your hiring in minutes and never let great talent fall through the cracks again.
+        </p>
+
+        <div
+          class="bg-btn-bg-color text-white py-[16px] px-[25px] mt-8 rounded-[30px] cursor-pointer hover:bg-btn-bg-color-hover hover:-rotate-2 font-light text-[18px]">
+          Get started
+        </div>
+
+
+      </div>
+    </div>
+    <!-- business partners section-->
+    <div>
+      <div class="flex flex-col justify-center items-center mt-5 pt-[150px]">
+        <p class="text-[26px] font-myFont text-custom-black">
+          join 1000+ SMBs hiring with homerun
+        </p>
+        <div class="grid grid-cols-7 mt-3">
+          <img loading="lazy" width="160" height="" alt="Logo TBWA Neboko"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64a6865b4faf9d755362c5d2_tbwa-logo.png">
+
+          <img loading="lazy" width="160" height="" alt="Logo Mr. Marvis"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64a6865a39b7be36f1fdb863_mrmarvis-logo.png">
+
+          <img loading="lazy" width="160" height="" alt="Logo Volkshotel" class="image-72"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64a6865b6cb644441b03a681_volkshotel-logo.png">
+
+          <img loading="lazy" width="160" height="" alt="Logo Patta" class="mobile-last"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64a6865bf740ca4969e6e735_patta-logo.png">
+
+          <img loading="lazy" width="160" height="" alt="Logo Open Social" class="mobile-last"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64a6865a3d1c004d94ced853_opensocial-logo.png">
+
+          <img loading="lazy" width="160" height="" alt="Logo Denham" class="mobile-last"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64a68659254f51aa74fabd27_denham-logo.png">
+
+          <img loading="lazy" width="160" height="" alt="Logo Gehl Architechts" class="mobile-last"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64a68659fe444433d7ffc312_gehl-logo.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- career and job post section -->
+    <div class="flex flex-col mt-[100px] text-custom-black">
+
+      <!-- applicant tracking subsection -->
+      <div class="flex justify-between">
+        <div class="flex flex-col  ml-[50px] mb-[40px] self-center">
+          <p class="text-[22px] pl-1 font-myFont">Applicant Tracking</p>
+
+          <div class="mt-[20px]">
+            <h2 class="text-[42px] leading-none font-black font-myFont3">
+              One clear overview for <br>
+              smooth collaborative <br>
+              hiring
+            </h2>
+          </div>
+          <p class="text-[26px] leading-[1.4] mt-[20px] font-light">
+            No more wasting time updating <br>
+            spreadsheets and deciphering CVs. Keep <br>
+            track of all your jobs and candidates from <br>
+            one clear dashboard.
+          </p>
+
+          <a href=""
+            class="px-[18px] py-[14px] pl-[26px] rounded-[40px] text-white bg-learn-more-btn-bg-color hover:-rotate-2  hover:bg-learn-more-btn-hover-bg-color w-[141px]  text-base mt-[10px]">
+            Learn More
+          </a>
+        </div>
+        <!-- image in right part -->
+        <div class="-mr-[10px] animate-move-diagonal">
+          <img loading="lazy" data-w-id="97fd4d81-5582-c658-5b78-b0d5f86b237d" alt="" width="810"
+            srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/646f494765753f487c6d4d54_ats-cover-image-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f494765753f487c6d4d54_ats-cover-image-p-800.png 800w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f494765753f487c6d4d54_ats-cover-image-p-1080.png 1080w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f494765753f487c6d4d54_ats-cover-image-p-1600.png 1600w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f494765753f487c6d4d54_ats-cover-image.png 1620w"
+            class="home-product-cover-img"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/646f494765753f487c6d4d54_ats-cover-image.png">
+        </div>
+      </div>
+      <!-- job application forms -->
+      <div class="flex justify-between mt-[200px]">
+        <div class="flex flex-col  ml-[50px] mb-[40px] self-center">
+
+          <p class="text-[22px]  font-myFont">Job Application forms</p>
+
+          <div class="mt-[20px]">
+            <h2 class="text-[42px] leading-none font-black font-myFont3 ">
+              Application forms for a <br>
+              great candidate<br>
+              experience
+            </h2>
+          </div>
+          <p class="text-[26px] leading-[1.4] mt-[20px] font-light">
+            Opt out of an inbox full of resumes and opt <br>
+            in for user-friendly application forms that <br>
+            candidates love.
+          </p>
+
+          <a href=""
+            class="px-[18px] py-[14px] pl-[26px] rounded-[40px] text-white bg-learn-more-btn-bg-color hover:-rotate-2  hover:bg-learn-more-btn-hover-bg-color w-[141px]  text-base mt-[10px]">
+            Learn More
+          </a>
+        </div>
+        <!-- image in right part -->
+        <div class="-mr-[10px] animate-move-diagonal">
+          <img loading="lazy" data-w-id="97fd4d81-5582-c658-5b78-b0d5f86b236a" alt="" width="810"
+            srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/64943c25f08e5fef2333b8bc_apply-cover-image2-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/64943c25f08e5fef2333b8bc_apply-cover-image2-p-800.png 800w, https://assets-global.website-files.com/58d684124f3644b01d649b26/64943c25f08e5fef2333b8bc_apply-cover-image2-p-1080.png 1080w, https://assets-global.website-files.com/58d684124f3644b01d649b26/64943c25f08e5fef2333b8bc_apply-cover-image2-p-1600.png 1600w, https://assets-global.website-files.com/58d684124f3644b01d649b26/64943c25f08e5fef2333b8bc_apply-cover-image2.png 1620w"
+            class="home-product-cover-img"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64943c25f08e5fef2333b8bc_apply-cover-image2.png">
+        </div>
+      </div>
+      <!-- career site & job posts -->
+      <div class="flex justify-between mt-[200px]">
+        <div class="flex flex-col ml-[50px] mb-[40px] self-center">
+
+          <p class="text-[22px]  font-myFont">Career site & Job posts</p>
+
+          <div class="mt-[20px]">
+            <h2 class="text-[42px] leading-none font-black  font-myFont3">
+              The best-looking <br>
+              career site out there <br>
+              (built by you)
+            </h2>
+          </div>
+          <p class="text-[26px] leading-[1.4] mt-[20px] font-light">
+            With an easy no-code builder you can <br>
+            create a custom career page and job posts <br>
+            that perfectly showcase your <br>
+            culture and brand.
+          </p>
+
+          <a href=""
+            class="px-[18px] py-[14px] pl-[26px] rounded-[40px] text-white bg-learn-more-btn-bg-color hover:-rotate-2  hover:bg-learn-more-btn-hover-bg-color w-[141px]  text-base mt-[10px]">
+            Learn More
+          </a>
+        </div>
+        <!-- image in right part -->
+        <div class="-mr-[10px] animate-move-diagonal">
+          <img loading="lazy" data-w-id="97fd4d81-5582-c658-5b78-b0d5f86b2357" alt="" width="810"
+            srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/646f4947b35f8177a426676c_career-cover-image-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f4947b35f8177a426676c_career-cover-image-p-800.png 800w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f4947b35f8177a426676c_career-cover-image-p-1080.png 1080w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f4947b35f8177a426676c_career-cover-image-p-1600.png 1600w, https://assets-global.website-files.com/58d684124f3644b01d649b26/646f4947b35f8177a426676c_career-cover-image.png 1620w"
+            class="home-product-cover-img"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/646f4947b35f8177a426676c_career-cover-image.png">
+        </div>
+      </div>
+
+    </div>
+    <!-- Hiring Templates -->
+    <div class="mx-12 mt-[220px] flex flex-col justify-center items-center bg-black-bg-color rounded-[40px]">
+      <div class="'flex justify-center items-center self-center m-20">
+        <div class="text-custom_yellow font-myFont text-center text-[26px] leading-[1.4]">Templates</div>
+        <h2 class="text-center text-white font-myFont3 text-[42px] font-black leading-[1.1]">Start hiring in minutes
+          with helpful <br>
+          hiring templates
+        </h2>
+        <div class="flex justify-center items-center mt-2">
+          <a href=""
+            class="text-black bg-white px-[22px] py-4 text-[18px] font-light rounded-[30px] hover:-rotate-2 hover:bg-login-btn-hover-bg-color">Explore
+            all templates</a>
+        </div>
+
+      </div>
+      <!-- card grid -->
+      <div class="grid grid-cols-6 gap-5 mb-8 p-[20px]">
+
+        <a href="" class="col-span-2 bg-card-brown-bg-color rounded-[20px]  hover:-translate-y-1 transition-transform">
+          <div class="relative float-right mt-8 mr-7">
+            <img loading="lazy" alt="Arrow"
+              src="https://assets-global.website-files.com/58d684124f3644b01d649b26/6447cf8e73e3d213102116f6_arrow.svg">
+          </div>
+          <div class="m-10">
+            <h3 class="text-white text-[24px] font-light leading-[1.4]">
+              20+ interview <br>
+              questions templates
+            </h3>
+          </div>
+
+          <img loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 84vw, (max-width: 941px) 85vw, 800px"
+            data-w-id="36402f34-37ba-e90c-7e2f-01e1db4c0332" alt=""
+            srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/6453c8f55f969df00551ebde_templates-questions-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/6453c8f55f969df00551ebde_templates-questions.png 800w"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/6453c8f55f969df00551ebde_templates-questions.png"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        </a>
+
+        <a href="" class="col-span-2 bg-card-brown-bg-color rounded-[20px]
+                hover:-translate-y-1 transition-transform">
+          <div class="relative float-right mt-8 mr-7">
+            <img loading="lazy" alt="Arrow"
+              src="https://assets-global.website-files.com/58d684124f3644b01d649b26/6447cf8e73e3d213102116f6_arrow.svg">
+          </div>
+          <div class="m-10">
+            <h3 class="text-white text-[24px] font-light leading-[1.4]">
+              70+ job description <br>
+              templates
+            </h3>
+          </div>
+
+          <img loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 84vw, (max-width: 941px) 85vw, 800px"
+            data-w-id="36402f34-37ba-e90c-7e2f-01e1db4c033b" alt=""
+            srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/6453c96551a0461f00517700_templates-description-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/6453c96551a0461f00517700_templates-description.png 800w"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/6453c96551a0461f00517700_templates-description.png"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        </a>
+
+        <a href="" class="col-span-2 bg-card-brown-bg-color rounded-[20px]
+                hover:-translate-y-1 transition-transform">
+          <div class="relative float-right mt-8 mr-7">
+            <img loading="lazy" alt="Arrow"
+              src="https://assets-global.website-files.com/58d684124f3644b01d649b26/6447cf8e73e3d213102116f6_arrow.svg">
+          </div>
+          <div class="m-10">
+            <h3 class="text-white text-[24px] font-light leading-[1.4]">
+              12 job post <br>
+              templates
+            </h3>
+          </div>
+          <img loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 84vw, (max-width: 941px) 85vw, 800px"
+            data-w-id="36402f34-37ba-e90c-7e2f-01e1db4c0344" alt=""
+            srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/64549f8e4e8cbc7376fc072a_templates-jobpost-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/64549f8e4e8cbc7376fc072a_templates-jobpost.png 800w"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64549f8e4e8cbc7376fc072a_templates-jobpost.png"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+        </a>
+
+      </div>
+    </div>
+    <!-- hiring blog -->
+    <div class="flex flex-col justify-center items-center mt-40 text-custom-brown">
+      <a href="" class="font-myFont text-[26px] leading-[1.4]">
+        Hiring Blog
+      </a>
+
+      <h2 class="text-[56px] leading-[1.1] font-myFont3 text-center mt-[20px] mb-[20px]">Resources that help you <br>
+        hire with intention
+      </h2>
+      <p class="text-[28px] leading-[1] text-center ">
+        Not an expert? No worries! We’ve got guides and articles <br>
+        packed with hiring best practices and tips.
+      </p>
+    </div>
+    <!-- homerun customer -->
+    <div class="flex flex-col justify-center items-center mt-40 text-custom-brown">
+      <div>
+        <a href="" class="font-myFont text-[26px] leading-[1.4]">
+          Why teams love homerun’s Hiring Software
+        </a>
+      </div>
+      <h2 class="text-[56px] leading-[1.1] font-myFont3 text-center mt-[20px] mb-[20px]">Join the club
+      </h2>
+      <p class="text-[28px] leading-[1] text-center">
+        Homerun customers share a passion for nurturing company culture.
+        <br> We all agree hiring can be more meaningful and personal.
+      </p>
+      <div
+        class="mt-[20px] bg-white p-4 rounded-[40px] px-[25px] text-[18px] hover:-rotate-2 hover:bg-login-btn-hover-bg-color">
+        <a href="">About our customers</a>
+      </div>
+    </div>
+    <!-- integartions with apps -->
+    <div class="grid grid-cols-6 gap-10 mx-10 px-10 mt-36">
+      <a href="" class="col-span-4 bg-custom-brown rounded-[20px] overflow-hidden">
+
+        <div class="m-10">
+          <h3 class="font-myFont3 text-[24px] leading-[1.4] tracking-[.3px]  font-black text-white mb-[10px]">
+            Integrations with your favorite apps
+          </h3>
+          <p class="text-white leading-[1.4] text-[20px] font-light mb-[10px]">
+            Combine your favorite tools to <br>
+            build a personal workflow.
+          </p>
+        </div>
+
+        <img class="grid-image" width="860" alt="ATS Integrations"
+          style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+          sizes="(max-width: 991px) 100vw, (max-width: 1439px) 80vw, 860px"
+          data-w-id="0d5ba09f-7f81-8212-8249-85423d7dfded" loading="eager"
+          srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/6464cf88736cd353dab929ca_ats-integrations-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/6464cf88736cd353dab929ca_ats-integrations-p-800.png 800w, https://assets-global.website-files.com/58d684124f3644b01d649b26/6464cf88736cd353dab929ca_ats-integrations-p-1080.png 1080w, https://assets-global.website-files.com/58d684124f3644b01d649b26/6464cf88736cd353dab929ca_ats-integrations-p-1600.png 1600w, https://assets-global.website-files.com/58d684124f3644b01d649b26/6464cf88736cd353dab929ca_ats-integrations.png 1720w"
+          src="https://assets-global.website-files.com/58d684124f3644b01d649b26/6464cf88736cd353dab929ca_ats-integrations.png">
+
+      </a>
+      <a href="" class="col-span-2 rounded-[20px] bg-btn-bg-color flex flex-col justify-between">
+        <div class="m-10">
+          <h3 class="text-white font-myFont3 text-[24px] leading-[1.4]">Showcase</h3>
+          <p class="text-white text-[20px] leading-[1.4] font-light">Get inspired by the creative ways <br>
+            our customers attract talent with <br>
+            Homerun.
+          </p>
+        </div>
+        <div class="pl-[30px] mb-10 mix-blend-overlay">
+          <img loading="eager"
+            style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
+            width="200" height="200" data-w-id="0d5ba09f-7f81-8212-8249-85423d7dfdf6" class="home-showcase-img"
+            src="https://assets-global.website-files.com/58d684124f3644b01d649b26/5e185020d27bcfb1f0007fb3_club-logo.svg">
+        </div>
+      </a>
+
+    </div>
+    <!-- review section -->
+    <div class="grid grid-cols-4 gap-10 m-20">
+      <div class="col-span-2 py-10 px-[60px] bg-white rounded-[20px]">
+        <img width="157" height="34" alt="Logo Capterra" class="revies-capterra"
+          src="https://assets-global.website-files.com/58d684124f3644b01d649b26/608acddd4944114a38644783_capterra-logo-2.jpg">
+        <div class="review-number text-[82px] leading-[1.4] font-black my-[10px]
+          font-myFont3 text-custom-brown">4,7</div>
+
+        <img width="285" alt="" class="rating-image"
+          src="https://assets-global.website-files.com/58d684124f3644b01d649b26/609aa24b372bb6717b0b0d30_608ace196c1fdf8a2ea9e084_reviews-stars.jpeg">
+        <p class="text-[22px] leading-[1.4] mt-[10px]">
+          Average review on Capterra, <br>
+          independent review site
+        </p>
+      </div>
+      <div class="col-span-2 py-10 px-[60px] bg-white rounded-[20px]">
+        <img width="160" height="44" alt="Logo Intercom"
+          src="https://assets-global.website-files.com/58d684124f3644b01d649b26/608acddcd521fbc86b8078c7_intercom-logo-2.jpg">
+        <div class="review-number text-[82px] leading-[1.4] font-black my-[10px]
+          font-myFont3 text-custom-brown"> 98,9% </div>
+        <div class="reviews-emoji text-[50px] mb-[25px] mt-[5px]">😃&nbsp;🤩</div>
+        <p class="text-[22px] leading-[1.4] mt-[10px]">
+          Average review on Capterra, <br>
+          independent review site
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <!-- footer -->
+  <div class="w-full bg-learn-more-btn-bg-color flex flex-col justify-center items-center rounded-[40px] mt-10 ">
+    <div class="flex flex-col justify-center items-center text-center mt-8 px-[40px] py-[60px]">
+      <img loading="lazy" width="Auto" data-w-id="a25a4f99-9bd0-9592-a028-4cbf610a5d9d" alt=""
+        srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/645218b27f543022796d985d_footer-icons-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/645218b27f543022796d985d_footer-icons.png 587w"
+        sizes="(max-width: 479px) 100vw, 249.984375px" class="cta-img"
+        src="https://assets-global.website-files.com/58d684124f3644b01d649b26/645218b27f543022796d985d_footer-icons.png"
+        style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;">
+
+      <h1 class="font-myFont3 text-white text-[66px] leading-[1] mt-4">
+        Start your <br>
+        free Homerun <br>
+        trial today
+      </h1>
+
+      <div
+        class="bg-btn-bg-color text-white py-[14px] px-[24px] mt-6 rounded-[30px] cursor-pointer hover:bg-btn-bg-color-hover hover:-rotate-2 font-light text-[18px]">
+        Start hiring for free
+      </div>
+
+      <div class="flex mt-14 mb-10">
+        <div class="flex text-custom-white mx-[10px] ">
+          <div class="mr-[5px] mt-[5px]">
+            <img width="12" height="8" alt="" class="cover-fineprint-checkicon"
+              src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64521935474dcd804cc60e09_checkmark.png">
+          </div>
+          <p class="text-[17px] font-light">The first job is free</p>
+        </div>
+        <div class="flex text-custom-white mx-[10px] text-[17px]">
+          <div class="mr-[5px] mt-[5px]">
+            <img width="12" height="8" alt="" class="cover-fineprint-checkicon"
+              src="https://assets-global.website-files.com/58d684124f3644b01d649b26/64521935474dcd804cc60e09_checkmark.png">
+          </div>
+          <p class="text-[17px] font-light">No credit card needed</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- main-footer -->
+  <div class="mx-[50px] mb-[20px] pt-[30px]">
+    <div class="grid grid-cols-footer-grid p-10 gap-4 font-light">
+
+      <div class="">
+        <div class="">
+          <h5 class="text-[20px] font-myFont3 leading-[1.1] font-black text-custom-brown">Product</h5>
+        </div>
+        <div class="mt-[20px]">
+          <ul class="">
+            <li>
+              <a href="https://www.homerun.co/product/career-site-job-posts"
+                class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Career site & Job posts
+              </a>
+            </li>
+            <li class="mt-[20px]">
+              <a href="https://www.homerun.co/product/application-forms"
+                class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Application forms</a>
+            </li>
+            <li class="mt-[20px]">
+              <a href="/product/applicant-tracking" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Applicant tracking
+              </a>
+            </li>
+            <li class="mt-[20px]">
+              <a href="/templates" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Templates
+              </a>
+            </li>
+            <li class="mt-[20px]">
+              <a href="/product/features" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                All features
+              </a>
+            </li>
+          </ul>
+
+          <div class="mt-[50px]">
+            <ul class="">
+              <li>
+                <a href="/pricing" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Pricing
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="https://www.homerun.co/updates"
+                  class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  New in Homerun ✨
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="/integrations" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Integrations
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="/partner-program" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Partners
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="">
+        <div class="">
+          <h5 class="text-[20px] font-myFont3 leading-[1.1] font-black text-custom-brown">Learn</h5>
+        </div>
+        <div class="mt-[20px]">
+          <ul class="">
+            <li>
+              <a href="https://www.homerun.co/product/career-site-job-posts"
+                class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Blog
+              </a>
+            </li>
+            <li class="mt-[20px]">
+              <a href="https://www.homerun.co/product/application-forms"
+                class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Help Center</a>
+            </li>
+          </ul>
+
+          <div class="mt-[50px]">
+            <div class="">
+              <h5 class="text-[20px] font-myFont3 leading-[1.1] font-black text-custom-brown">Guide</h5>
+            </div>
+            <ul class="">
+              <li class="mt-[20px]">
+                <a href="/pricing" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Hiring an Intern
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="https://www.homerun.co/updates"
+                  class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Hiring Process
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="/integrations" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Remote Hiring
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="/partner-program" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Employer Branding
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="/partner-program" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Diveristy, Equity & Inclusion
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="/partner-program" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Attracting Talent
+                </a>
+              </li>
+
+              <li class="mt-[20px]">
+                <a href="/partner-program" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  GDPR Hiring
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="">
+        <div class="">
+          <h5 class="text-[20px] font-myFont3 leading-[1.1] font-black text-custom-brown">About Homerun</h5>
+        </div>
+        <div class="mt-[20px]">
+          <ul class="">
+            <li>
+              <a href="https://www.homerun.co/product/career-site-job-posts"
+                class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                About us
+              </a>
+            </li>
+            <li class="mt-[20px]">
+              <a href="https://www.homerun.co/product/application-forms"
+                class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Help Center</a>
+            </li>
+
+            <li class="mt-[20px]">
+              <a href="https://www.homerun.co/product/application-forms"
+                class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="mt-[50px]">
+            <div class="">
+              <h5 class="text-[20px] font-myFont3 leading-[1.1] font-black text-custom-brown">Legal</h5>
+            </div>
+            <ul class="">
+              <li class="mt-[20px]">
+                <a href="/pricing" class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Terms
+                </a>
+              </li>
+              <li class="mt-[20px]">
+                <a href="https://www.homerun.co/updates"
+                  class="text-[20px] leading-[1.2] text-custom-brown-transparent">
+                  Privacy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="">
+        <div class="">
+          <h5 class="text-[20px] font-myFont3 leading-[1.1] font-black text-custom-brown">Our newsletter</h5>
+          <div class="">
+            <div class="mt-8 mb-3">
+              <a href="" class="">
+                <img loading="lazy" sizes="(max-width: 479px) 100vw, 223.015625px" height="100" alt=""
+                  srcset="https://assets-global.website-files.com/58d684124f3644b01d649b26/632da1fe11a9fa2d7b1f495f_Asset%203%402x-p-500.png 500w, https://assets-global.website-files.com/58d684124f3644b01d649b26/632da1fe11a9fa2d7b1f495f_Asset%203%402x.png 877w"
+                  class="theartofwork-logo"
+                  src="https://assets-global.website-files.com/58d684124f3644b01d649b26/632da1fe11a9fa2d7b1f495f_Asset%203%402x.png">
+              </a>
+            </div>
+
+            <div class="">
+              <p class="text-[18px] leading-[1.4] text-custom-brown font-light">
+                Receive must-read articles and <br>
+                trends on company culture, hiring <br>
+                and work/life balance from leading
+                <br> publications.
+              </p>
+            </div>
+            <!-- form -->
+            <div class="mt-8">
+              <form action="" class="flex">
+                <input type="email"
+                  class="text-[18px] bg-custom-brown-bg-transparent h-[50px] px-[12px] pl-[20px] py-[8px] leading-[1.4]hover:bg-custom-Email-bg-hover-color rounded-l-[30px] placeholder:text-custom-brown"
+                  name="email" placeholder="Email" maxlength="256">
+                <input type="submit"
+                  class="bg-white px-[15px] py-[8px] text-[18px] text-custom-brown font-light hover:bg-custom-Sign-up-bg-hover-color cursor-pointer rounded-r-[30px] "
+                  value="Sign up">
+              </form>
+            </div>
+            <!-- social btns -->
+            <div class="flex gap-x-2 mt-6">
+              <a href=""
+                class="bg-custom-brown rounded-full hover:border-white border-2  h-10  border-transparent w-10 pl-[1px] pt-[1.5px]">
+                <img width="34" height="34" alt="" class=""
+                  src="https://assets-global.website-files.com/58d684124f3644b01d649b26/5975bc28d9e5f43edc84e99f_logo-instagram.svg">
+              </a>
+
+              <a href=""
+                class="bg-custom-brown rounded-full h-10 w-10 text-center pl-[2.3px] pt-[2px] border-transparent hover:border-white border-2">
+                <img width="34" height="34" alt="" class=""
+                  src="https://assets-global.website-files.com/58d684124f3644b01d649b26/5975bc2855f0c353c22fda33_logo-linkedin.svg">
+              </a>
+
+              <a href=""
+                class="bg-custom-brown rounded-full h-10 w-10 text-center pl-[2.3px] pt-[2px] border-transparent hover:border-white border-2">
+                <img width="34" height="34" alt="" class=""
+                  src="https://assets-global.website-files.com/58d684124f3644b01d649b26/5975bc270f93db3c99396453_logo-twitter.svg"></a>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
